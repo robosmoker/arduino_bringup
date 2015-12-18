@@ -7,7 +7,7 @@ AVRDUDE_CONF   = ./avrdude_gpio.conf
 USER_LIB_PATH  = libraries
 
 TARGET         = arduino_bringup
-#ARDUINO_LIBS   = 
+ARDUINO_LIBS   = EventManager/EventManager Wire
 
 BOARDS_TXT = ./boards.txt
 BOARD_TAG = atmega328_9600_8
