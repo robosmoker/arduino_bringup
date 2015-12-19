@@ -22,7 +22,7 @@ I'm using Raspian, which is a quasi-debian.  In order to program the AVR, you ne
 `sed -i -E 's/--enable-doc/--enable-doc --enable-linuxgpio/' debian/rules`
 
 7. Fix debian bug #745034
-`sed -i -E 's/HAVE_LINUX_GPIO/HAVE_LINUXGPIO/' pindefs.h
+`sed -i -E 's/HAVE_LINUX_GPIO/HAVE_LINUXGPIO/' pindefs.h`
 
 8. Build it
 `fakeroot debian/rules binary`
